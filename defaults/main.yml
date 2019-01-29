@@ -1,0 +1,32 @@
+---
+
+# vim: ts=2:sw=2:et:ft=yaml
+# -*- mode: yaml; indent-tabs-mode: nil; tab-width: 2 -*-
+# code: language=yaml insertSpaces=true tabSize=2
+
+# https://github.com/atc0005/ansible-role-docker-host
+
+base_packages:
+  - python-pip
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - software-properties-common
+
+docker_related_distro_packages:
+  - docker-ce
+
+# https://docs.docker.com/compose/install/
+docker_related_python_modules:
+  - docker
+  - docker-compose
+
+docker_apt_repo_key_fingerprint: "0x0EBFCD88"
+
+key_server: "keyserver.ubuntu.com"
+
+docker_apt_repo: >
+  deb https://download.docker.com/linux/ubuntu
+  {{ ansible_distribution_release }} stable
+
+...

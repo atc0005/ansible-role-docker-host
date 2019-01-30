@@ -93,3 +93,10 @@ MIT
 
 This role was created in 2019 by Adam Chalkley as part of building an on-demand
 development environment toolkit managed by Ansible.
+
+## References
+
+- <https://github.com/atc0005/ansible-playbooks>
+- <https://github.com/atc0005/ansible-role-lxd-host>
+- <https://github.com/atc0005/ansible-role-lxd-testenv>
+- <https://github.com/atc0005/ansible-role-docker-host>

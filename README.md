@@ -58,7 +58,22 @@ None
 Note: This role is not yet availalble via Ansible Galaxy, so for now you will
 need to install it via a `requirements.yml` file.
 
-Example `requirements.yml` file:
+#### Specific stable release version
+
+```yaml
+---
+
+- name: "atc0005.docker-host"
+  src: https://github.com/atc0005/ansible-role-docker-host.git"
+  version: "v1.0"
+
+...
+
+```
+
+#### Latest from the `master` branch
+
+Example `requirements.yml` file that uses the latest from the `master` branch:
 
 ```yaml
 ---

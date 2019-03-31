@@ -52,6 +52,9 @@ None
           name: atc0005.docker-host
 ```
 
+Change `docker-hosts` to `localhost` if you wish to use this playbook directly
+on the system where the playbook is running (e.g., one-off testing).
+
 ## Installing the role
 
 ### Create `requirements.yml` file

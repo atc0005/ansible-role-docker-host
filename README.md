@@ -65,7 +65,7 @@ need to install it via a `requirements.yml` file.
 ---
 
 - name: "atc0005.docker-host"
-  src: https://github.com/atc0005/ansible-role-docker-host.git"
+  src: "https://github.com/atc0005/ansible-role-docker-host.git"
   version: "v1.0"
 
 ...
@@ -80,7 +80,7 @@ Example `requirements.yml` file that uses the latest from the `master` branch:
 ---
 
 - name: "atc0005.docker-host"
-  src: https://github.com/atc0005/ansible-role-docker-host.git"
+  src: "https://github.com/atc0005/ansible-role-docker-host.git"
   version: "master"
 
 ...

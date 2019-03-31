@@ -29,4 +29,7 @@ docker_apt_repo: >
   deb https://download.docker.com/linux/ubuntu
   {{ ansible_distribution_release }} stable
 
+# Defaults to the user running the playbook if not set
+docker_users: []
+
 ...

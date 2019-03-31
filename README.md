@@ -30,6 +30,7 @@ All variables are set within `default/main.yml`.
 | `docker_apt_repo_key_fingerprint` | Packaging signing key fingerprint. Used to fetch GPG package signing key from key server. |
 | `key_server`                      | GPG public key server which can be used to retrieve the key used to sign Docker packages  |
 | `docker_apt_repo`                 | APT `sources.list.d` template used to allow package installation from upstream repo       |
+| `docker_users`                    | List of users that should be added to the `docker` user group                             |
 
 ## Dependencies
 

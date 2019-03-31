@@ -47,8 +47,8 @@ None
   tasks:
 
       - name: Install Docker packages, perform initial setup
-      import_role:
-        name: atc0005.docker-host
+        import_role:
+          name: atc0005.docker-host
 ```
 
 ## Installing the role

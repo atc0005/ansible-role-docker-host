@@ -40,6 +40,13 @@
     name: "{{ docker_related_distro_packages }}"
     state: present
 
+- name: Start Docker daemon, enable starting at boot
+  become: yes
+  service:
+    name: docker
+    state: started
+    enabled: yes
+
 - name: Install Docker related Python modules
   pip:
     name: "{{ docker_related_python_modules }}"

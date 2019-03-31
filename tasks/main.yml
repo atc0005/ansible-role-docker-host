@@ -53,10 +53,11 @@
 
 # Fallback to current user if not set elsewhere
 - name: Add docker users to the docker group.
+  become: yes
   user:
     name: "{{ item }}"
     groups: docker
     append: true
-  with_items: "{{ docker_users | default(lookup('env','USER')) }}"
+  with_items: "{{ docker_users | default(lookup('env','USER'), true) }}"
 
 ...
